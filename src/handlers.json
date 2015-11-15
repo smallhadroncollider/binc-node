@@ -1,0 +1,7 @@
+[{
+    "name": "brew",
+    "bin": "brew"
+}, {
+    "name": "cask",
+    "bin": "brew-cask"
+}]

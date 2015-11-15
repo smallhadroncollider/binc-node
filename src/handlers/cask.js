@@ -8,8 +8,8 @@ module.exports = function (config) {
         items: config.taps,
         install: "brew tap"
     }, {
-        check: "brew list",
+        check: "brew cask list",
         items: config.packages,
-        install: "brew install"
+        install: "brew cask install"
     }].forEach(run);
 };

@@ -1,7 +1,7 @@
 # binc
 **Keeping your binaries in sync**
 
-binc is a command line tool for easily keeping track of binaries that you want installed on your Mac. Sort of like [mackup](https://github.com/lra/mackup), but for your applications. Currently supports [Homebrew](http://brew.sh).
+binc is a command line tool for easily keeping track of binaries that you want installed on your Mac. Sort of like [mackup](https://github.com/lra/mackup), but for your applications. Currently supports [Homebrew](http://brew.sh) and [Homebrew Cask](http://caskroom.io).
 
 ## Details
 
@@ -14,13 +14,28 @@ You keep track of the binaries/applications that you want installed on your comp
 
 ## Currently Supports
 
-- Home Brew
+- Homebrew
+- Homebrew Cask
 
 ## Installation
 
 - `npm install -g binc`
 
+### Recommended
+
+We recommend using `binc` with [mackup](https://github.com/lra/mackup). Add a `binc.cfg` to your `~/.mackup` directory.
+
+```ini
+[application]
+name = binc
+
+[configuration_files]
+.binc
+```
+
 ## Configuration
+
+Configuration files will be created the first time you run `binc` if they do not already exist.
 
 ### Homebrew
 
@@ -43,13 +58,36 @@ packages:
     - zsh
 ```
 
+### Homebrew Cask
+
+- Create a file named `cask.yml` in the `~/.binc/` directory
+
+```yml
+taps:
+    - caskroom/fonts
+
+packages:
+    - alfred
+    - fantastical
+    - google-chrome-canary
+    - iterm2
+    - paw
+    - quicklook-json
+    - sequel-pro
+    - vagrant
+    - virtualbox
+
+    # Fonts
+    - font-inconsolata
+```
+
 ## Syncing
 
 - Run `binc` from the command line
 
 ## To Do
 
-- Home Brew Cask Support
 - Node Support
 - Gem Support
+- Pip Support
 - Software Update Support?
