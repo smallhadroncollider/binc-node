@@ -20,10 +20,11 @@
   "homepage": "https://github.com/smallhadroncollider/binc#readme",
   "dependencies": {
     "js-yaml": "^3.4.3",
+    "mkdirp": "^0.5.1",
     "ramda": "^0.18.0"
   },
   "preferGlobal": true,
   "bin": {
-      "binc": "src/binc.js"
+    "binc": "src/binc.js"
   }
 }
