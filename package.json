@@ -1,0 +1,30 @@
+{
+  "name": "binc",
+  "description": "Binc helps sync your apps across multiple Mac OS X installs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smallhadroncollider/binc.git"
+  },
+  "keywords": [
+    "app",
+    "sync",
+    "util",
+    "mac",
+    "osx"
+  ],
+  "author": "Small Hadron Collider",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smallhadroncollider/binc/issues"
+  },
+  "homepage": "https://github.com/smallhadroncollider/binc#readme",
+  "dependencies": {
+    "js-yaml": "^3.4.3",
+    "mkdirp": "^0.5.1",
+    "ramda": "^0.18.0"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "binc": "src/binc.js"
+  }
+}
