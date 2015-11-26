@@ -4,4 +4,7 @@
 }, {
     "name": "cask",
     "bin": "brew-cask"
+}, {
+    "name": "gem",
+    "bin": "gem"
 }]
