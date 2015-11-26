@@ -1,7 +1,7 @@
 # binc
 **Keeping your binaries in sync**
 
-binc is a command line tool for easily keeping track of binaries that you want installed on your Mac. Sort of like [mackup](https://github.com/lra/mackup), but for your applications. Currently supports [Homebrew](http://brew.sh) and [Homebrew Cask](http://caskroom.io).
+binc is a command line tool for easily keeping track of binaries that you want installed on your Mac. Sort of like [mackup](https://github.com/lra/mackup), but for your applications. Currently supports [Homebrew](http://brew.sh), [Homebrew Cask](http://caskroom.io), and [Ruby Gems](https://rubygems.org).
 
 ## Details
 
@@ -16,6 +16,7 @@ You keep track of the binaries/applications that you want installed on your comp
 
 - Homebrew
 - Homebrew Cask
+- Ruby Gems
 
 ## Installation
 
@@ -81,6 +82,18 @@ packages:
     - font-inconsolata
 ```
 
+### Ruby Gems
+
+- Create a file named `gem.yml` in the `~/.binc/` directory
+
+```yml
+packages:
+    - bundler
+    - capistrano
+    - scss_lint
+    - tmuxinator
+```
+
 ## Syncing
 
 - Run `binc` from the command line
@@ -88,6 +101,5 @@ packages:
 ## To Do
 
 - Node Support
-- Gem Support
 - Pip Support
 - Software Update Support?
